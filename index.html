@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My awesome prototype</title>
+  <meta name="description" content="Coursera HCI class prototype">
+  <meta name="author" content="Alexandra Leisse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/my_css.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+ 
+<!-- top button row -->
+  <div class="row-fluid">
+	  <div class="span2">
+		<div class="btn-group">
+		<a class="btn btn-large dropdown-togle" data-toggle="dropdown"  href="#"><i class="icon-search"></i></a>
+		<ul class="dropdown-menu" style="width:300px;padding-top:10px;">
+		  <li>
+		    <form class="form-search">
+              <input type="text" class="search-query" placeholder="Search your to-dos">
+              <button type="submit" class="btn">Search</button>
+            </form>
+          </li>
+		</ul>
+		</div>
+	  </div>
+	  <div class="span3">
+		<h2>Remind Me</h2>
+	  </div>
+  </div>
+ 
+ <!-- MAIN CONTENT AREA -->
+ 
+  <div class="row-fluid">
+    <div class="span12" style="background-image:url(./img/map.png);overflow:hidden;max-height:800px;">
+      <div class="row-fluid" style="height:20px;">
+        <div class="span12">&nbsp;</div>
+      </div>
+      <div class="row-fluid">
+	    <div class="span1" style="margin-left:48%;">
+          <a href="task_screen.html" id="anchor1" rel="tooltip" title="Sample task #1: due today"><span class="pin-urgent" style="left:48%;"></span></a>
+        </div>
+      </div>
+      <div class="row-fluid">    
+	    <div class="span1" style="margin-left:51%;">
+          <a href="task_screen2.html" id="anchor2" rel="tooltip" title="Sample task #2: due on Monday"><span class="pin-later" style="left:51%;"></span></a>
+        </div>
+      </div>
+      <div class="row-fluid" style="height:50px;">
+        <div class="span12">&nbsp;</div>
+      </div>
+      <div class="row-fluid" style="height:18px;">
+        <div class="span1" style="50%;">
+          <span class="pin-position ring" style="left:50%;"></span>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span1" style="margin-left:85%">
+          <a href="task_screen.html" id="anchor3" rel="tooltip" title="Sample task #1: due today"><span class="pin-urgent" style="left:85%;"></span></a>
+        </div>
+      </div>
+       <div class="row-fluid" style="height:80px;">
+      </div>
+     <div class="row-fluid">    
+	    <div class="span1" style="margin-left:65%;">
+          <a href="task_screen2.html" id="anchor4" rel="tooltip" title="SALE<br />Sample task #2: no due date" ><span class="pin-later sale" style="left:65%;"></span></a>
+        </div>
+     </div>
+     <div class="row-fluid" style="height:50px;">
+        <div class="span12">&nbsp;</div>
+      </div>
+   </div>
+  </div>
+
+<!-- bottom button row -->
+      <div class="row-fluid">
+        <div class="span12">
+          <a class="btn btn-large" href="input_screen.html"><i class="icon-plus"></i>Add Task</a>
+          <a class="btn btn-large" href="settings_screen.html" style="float:right;"><i class="icon-cog"></i>Settings</a>
+        </div>
+      </div>
+      <div class="row-fluid" style="height:50px;">
+        <div class="span12">&nbsp;</div>
+      </div>
+
+  </div> 
+  <!-- JS scripts -->
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+      $("#anchor1").tooltip();
+      $("#anchor2").tooltip();
+      $("#anchor3").tooltip();
+      $("#anchor4").tooltip();
+  </script>
+</body>
+</html>

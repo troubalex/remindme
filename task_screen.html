@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My awesome prototype</title>
+  <meta name="description" content="Coursera HCI class prototype">
+  <meta name="author" content="Alexandra Leisse">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="css/my_css.css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="container">
+ 
+<!-- top button row -->
+  <div class="row-fluid">
+	  <div class="span12">
+		<a class="btn btn-large" href="index.html"><i class="icon-chevron-left"></i></a>
+	    <a class="btn btn-large" href="edit_screen.html" alt="Edit" style="float:right;"><i class="icon-pencil" title="edit"></i></a>
+	  </div>
+  </div>
+ 
+ <!-- MAIN CONTENT AREA -->
+ 
+  <div class="row-fluid">
+    <div class="span12">
+      <h2>Sample Task #1</h2>
+    </div>
+  </div>
+ 
+  <div class="row-fluid">
+    <div class="span12"  style="background-image:url(./img/map.png);overflow:hidden;">
+	  
+      <div class="row-fluid" style="height:120px;">
+        <div class="span12">&nbsp;</div>
+      </div>
+      <div class="row-fluid" style="height:50px;">
+        <div class="span12">
+          <span class="pin-position ring" style="left:50%"></span>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span1" style="margin-left:48%;">
+          <a href="location_screen.html" id="anchor1" rel="tooltip" title="Sample Task <br />Sample Location"><span class="pin-urgent" style="left:48%;"></span></a>
+        </div>
+      </div>
+      <div class="row-fluid">
+        <div class="span1" style="margin-left:26%;">
+          <a href="location_screen.html" id="anchor2" rel="tooltip" title="SALE<br />Sample Task<br />Sample Location"><span class="pin-later sale" style="left:26%;"></span></a>
+        </div>
+      </div>
+      <div class="row-fluid" style="height:120px;">
+        <div class="span12">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row-fluid" style="margin-top:5px;">
+    <div class="span6">
+      <h4>Due today, 5pm</h4>
+      <p>Shared with Ted<br />No notes</p>
+    </div>
+    <div class="span6">
+	  <a class="btn btn-large btn-success" href="#doneAlert" style="float:right;" data-toggle="modal"><i class="icon-ok icon-white"></i> Done!</a>
+	  <a class="btn btn-large" href="#inProgressAlert" style="float:right;" data-toggle="modal">I'm doing this.</a>
+    </div>
+  </div>
+
+<!-- notification modal -->
+
+  <div id="doneAlert" class="modal hide" style="max-width:300px;top:20%;left:10%;">
+    <div class="modal-header">
+        <h3>Congratulations!</h3>
+    </div>
+    <div class="modal-body"> 
+      <p>You have completed your task.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Undo</a>
+        <a href="index.html" class="btn btn-primary">Continue</a>
+    </div>
+  </div>
+  
+    <div id="inProgressAlert" class="modal hide" style="max-width:300px;top:20%;left:10%;">
+    <div class="modal-header">
+        <h3>Ok, got you!</h3>
+    </div>
+    <div class="modal-body"> 
+      <p>We're letting Ted know you're on it.</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Undo</a>
+        <a href="index.html" class="btn btn-primary">Thanks</a>
+    </div>
+  </div>
+
+
+  </div> 
+  <!-- JS scripts -->
+  <script src="js/jquery-1.7.2.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+      $("#anchor1").tooltip();
+      $("#anchor2").tooltip();
+  </script>
+  
+</body>
+</html>
